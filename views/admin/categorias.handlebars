@@ -3,3 +3,14 @@
 <a href="/admin/categorias/add">
   <button class="btn btn-success">Nova Categoria</button>
 </a>
+
+{{#each categorias}}
+  <div class="card mt-4">
+    <div class="card-body">
+      <h4>{{this.nome}}</h4>
+      <small>{{this.slug}}</small>
+    </div>
+  </div>
+{{else}}
+
+{{/each}}
